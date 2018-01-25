@@ -117,7 +117,7 @@ body {
 
 /* line 41, ../sass/screen.scss */
 nav {
-  z-index: 5;
+  z-index: 10;
   position: relative;
 }
 
