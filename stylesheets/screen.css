@@ -1790,22 +1790,22 @@ nav {
 /* line 1316, ../sass/screen.scss */
 .text-black {
   color: #2c2c2c;
-  padding-left: 10px;
 }
 /* line 1319, ../sass/screen.scss */
 .text-black input {
+  margin-left: 10px;
   margin-right: 5px !important;
   vertical-align: 9px !important;
   width: 20px !important;
   height: 20px;
 }
 
-/* line 1327, ../sass/screen.scss */
+/* line 1328, ../sass/screen.scss */
 .text-orange {
   color: orange;
 }
 
-/* line 1333, ../sass/screen.scss */
+/* line 1334, ../sass/screen.scss */
 #sport iframe {
   margin: 50px auto;
 }
