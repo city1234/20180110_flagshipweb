@@ -66,6 +66,50 @@ nav{
             }
         }
     }
+    .account_logout{
+        vertical-align: middle;
+        >*{
+            margin-right: 20px;
+        }
+        i{
+            font-size: 18px;
+            vertical-align: -3px;
+            margin-right: 8px;
+            margin-top: 10px;
+        }
+        input{
+            margin-top: 9px;
+            width: 120px;
+            height: 20px;
+            border: 0px ;
+            padding: 0 10px;
+            font-size: 12px;
+        }
+        .forget{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .account_btn{
+            border: 1px solid #fff;
+            //min-width: 80px;
+            @include css3(border-radius,5px);
+            text-align: center;
+            @include css3(transition,all .3s ease);
+            line-height: 20px;
+            margin-top: 6px;
+            div{
+                color:#fff;
+                padding: 3px 15px;
+            }
+            &:hover{
+                background: #fff;
+                div{
+                    color:#2e2e2e;
+                }
+            }
+        }
+    }
     .list{
         >ul{
             @include css3(transition,all .3s ease);
@@ -686,10 +730,30 @@ nav{
         .gamename{
             background: #6d6d6d;
             overflow: hidden;
+            .gamelistbtn{
+                float: left;
+                width: 50px;
+                cursor: pointer;
+                &:hover{
+                    color:#fff;
+                }
+            }
+            >div{
+                overflow: hidden;
+                width: calc(100% - 100px);
+                float: left;
+                height: 70px;
+                ul{
+                    position: relative;
+                    width: 1000%;
+                    overflow: hidden;
+                }
+                li{@include grid( 60, 0);}
+            }
             li{
                 font-size: 20px;
                 text-align: center;
-                @include grid( 6, 0);
+                height: 70px;
                 line-height: 70px;
                 @include css3(transition,all .3s ease);
                 div{
@@ -701,6 +765,17 @@ nav{
             }
             .active{
                 background: #2e2e2e;
+                position: relative;
+                &:after{
+                    @include css3(transition,all .3s ease);
+                    content: "";
+                    position: absolute;
+                    top:50px;
+                    left: calc(50% - 10px);
+                    border: 10px solid transparent;
+                    border-bottom: 10px solid #ff7200;
+                }
+
             }
         }
         .gamesearchbar{

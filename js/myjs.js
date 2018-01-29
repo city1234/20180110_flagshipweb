@@ -14,8 +14,16 @@ $(document).ready(function() {
         $('html,body').animate({ scrollTop: 0 }, 300);
     });
     /*endanimatetop*/
-
-    $('#nav').load('common.html #nav');
+function login_fn(){
+  $(".account_login").fadeOut(0);
+  $(".loginbtn").click(function () {
+    $(".account_logout").fadeOut(0);
+    $(".account_login").fadeIn(0);
+  });
+}
+  $('#nav').load('common.html #nav', function () {
+    login_fn();
+  });
     $('.copyright').load('common.html .copyright');
     $('.footer').load('common.html .footer');
     $('.leftmenu').load('common.html .leftmenu');

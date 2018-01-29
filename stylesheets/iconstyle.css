@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?5jqxob');
-  src:  url('fonts/icomoon.eot?5jqxob#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?5jqxob') format('truetype'),
-    url('fonts/icomoon.woff?5jqxob') format('woff'),
-    url('fonts/icomoon.svg?5jqxob#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?2jtw00');
+  src:  url('fonts/icomoon.eot?2jtw00#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2jtw00') format('truetype'),
+    url('fonts/icomoon.woff?2jtw00') format('woff'),
+    url('fonts/icomoon.svg?2jtw00#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -45,11 +45,17 @@
 .icon-arrow_drop_down:before {
   content: "\e909";
 }
+.icon-chevron-right:before {
+  content: "\e90b";
+}
 .icon-chevron-up:before {
   content: "\e902";
 }
 .icon-chevron-down:before {
   content: "\e901";
+}
+.icon-chevron-left:before {
+  content: "\e90a";
 }
 .icon-account:before {
   content: "\e900";

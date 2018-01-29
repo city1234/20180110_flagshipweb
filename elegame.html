@@ -23,12 +23,22 @@
         <div class="wrapper-in">
             <div class="gamelist">
                 <ul class="gamename">
-                    <li class="active"><a href=""><div>MG电子</div></a></li>
-                    <li><a href=""><div>BBIN电子</div></a></li>
-                    <li><a href=""><div>AG电子</div></a></li>
-                    <li><a href=""><div>PT电子</div></a></li>
-                    <li><a href=""><div>AG捕鱼王</div></a></li>
-                    <li><a href=""><div>MW电子</div></a></li>
+                    <li class="gamelistbtn gamelistbtn_left"><i class="icon-chevron-left"></i> </li>
+                    <div>
+                        <ul>
+                            <li class="active"><a href=""><div>MG电子</div></a></li>
+                            <li><a href=""><div>BBIN电子</div></a></li>
+                            <li><a href=""><div>AG电子</div></a></li>
+                            <li><a href=""><div>PT电子</div></a></li>
+                            <li><a href=""><div>AG捕鱼王</div></a></li>
+                            <li><a href=""><div>MW电子</div></a></li>
+                            <li><a href=""><div>AG电子</div></a></li>
+                            <li><a href=""><div>PT电子</div></a></li>
+                            <li><a href=""><div>AG捕鱼王</div></a></li>
+                            <li><a href=""><div>MW电子</div></a></li>
+                        </ul>
+                    </div>
+                    <li class="gamelistbtn gamelistbtn_right"><i class="icon-chevron-right"></i></li>
                 </ul>
                 <div class="gamesearchbar">
                     <div class="gamesort">
@@ -128,12 +138,48 @@
     <!---->
     <!--footer-->
     <div class="footer wrapper"></div>
-
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/jquery.nicescroll.js"></script>
     <script src="js/html5zoo.js"></script>
     <script src="js/lovelygallery.js"></script>
     <script src="js/myjs.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.gamename').each(function () {
+                    var now_hot_page = 0;
+                    var $tabpag = $(this).children("div ul");
+                    var $gamenamewidth = $(this).children("div").width();
+                    $('.gamelistbtn_left').click(function () {
+                        var $tabpag = $(this).children("div ul");
+                        console.log($tabpag);
+                        hot_item = $(".gamename ul li").last().index() + 1;
+                        hot_page = Math.ceil(hot_item / 6);
+                        now_hot_page--;
+                        $(".gamename ul").animate({ left: (now_hot_page * -$gamenamewidth) }, 300);
+                        hot_page_fn();
+                    });
+                    $('.gamelistbtn_right').click(function () {
+                        var $tabpag = $(this).children("div ul");
+                        hot_item = $(".gamename ul li").last().index() + 1;
+                        hot_page = Math.ceil(hot_item / 6);
+                        now_hot_page++;
+                        $(".gamename ul").animate({ left: (now_hot_page * -$gamenamewidth) }, 300);
+                        hot_page_fn();
+                    });
+                    function hot_page_fn() {
+                        if (now_hot_page >= hot_page) {
+                            now_hot_page = 0;
+                            $(".gamename ul").animate({ left: ((now_hot_page - 1) * -$gamenamewidth) }, 0);
+                            $(".gamename ul").animate({ left: (now_hot_page * -$gamenamewidth) }, 300);
+                        } else if (now_hot_page < 0) {
+                            now_hot_page = hot_page - 1;
+                            $(".gamename ul",).animate({ left: ((now_hot_page + 1) * -$gamenamewidth) }, 0);
+                            $(".gamename ul",).animate({ left: (now_hot_page * -$gamenamewidth) }, 300);
+                        }
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
