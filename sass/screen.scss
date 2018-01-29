@@ -86,8 +86,10 @@ nav{
             font-size: 12px;
         }
         .forget{
+            @include css3(transition,all .3s ease);
             &:hover{
-                text-decoration: underline;
+                color:#ff7200;
+                //text-decoration: underline;
             }
         }
         .account_btn{

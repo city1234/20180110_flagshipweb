@@ -173,11 +173,19 @@ nav {
   padding: 0 10px;
   font-size: 12px;
 }
-/* line 89, ../sass/screen.scss */
-.topnav .account_logout .forget:hover {
-  text-decoration: underline;
+/* line 88, ../sass/screen.scss */
+.topnav .account_logout .forget {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-/* line 93, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
+.topnav .account_logout .forget:hover {
+  color: #ff7200;
+}
+/* line 95, ../sass/screen.scss */
 .topnav .account_logout .account_btn {
   border: 1px solid #fff;
   -webkit-border-radius: 5px;
@@ -194,20 +202,20 @@ nav {
   line-height: 20px;
   margin-top: 6px;
 }
-/* line 101, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .topnav .account_logout .account_btn div {
   color: #fff;
   padding: 3px 15px;
 }
-/* line 105, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .topnav .account_logout .account_btn:hover {
   background: #fff;
 }
-/* line 107, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .topnav .account_logout .account_btn:hover div {
   color: #2e2e2e;
 }
-/* line 114, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .topnav .list > ul {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -217,22 +225,22 @@ nav {
   cursor: pointer;
   position: relative;
 }
-/* line 118, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .topnav .list > ul:hover {
   background: #000;
 }
-/* line 120, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .topnav .list > ul:hover .list_s {
   max-height: 1000px;
   opacity: 1;
 }
-/* line 126, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .topnav .list > ul .list_b {
   padding: 0 10px;
   max-width: 80px;
   text-align: center;
 }
-/* line 131, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .topnav .list > ul .list_s {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -251,12 +259,12 @@ nav {
   line-height: 35px;
   font-size: 14px;
 }
-/* line 146, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .topnav .list > ul .list_s_biglist {
   width: 600px;
   left: calc(50% - 300px);
 }
-/* line 149, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .topnav .list > ul .list_s_biglist ul {
   float: left;
   width: calc( 25% - 1px );
@@ -265,19 +273,19 @@ nav {
   margin: 10px 0;
   min-height: 175px;
 }
-/* line 156, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .topnav .list > ul .list_s_biglist ul .list_s_title {
   font-weight: 900;
 }
-/* line 158, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .topnav .list > ul .list_s_biglist ul .list_s_title div {
   color: #fff000;
 }
-/* line 162, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .topnav .list > ul .list_s_biglist ul:last-child {
   border-right: 0px solid rgba(255, 255, 255, 0.3);
 }
-/* line 165, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .topnav .list > ul .list_s_biglist ul li {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -285,27 +293,27 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 167, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .topnav .list > ul .list_s_biglist ul li:hover {
   background: rgba(255, 255, 255, 0.2);
 }
-/* line 175, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .topnav .list > * {
   float: left;
 }
-/* line 178, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .topnav .list .list_account {
   margin-right: 40px;
 }
-/* line 180, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .topnav .list .list_account a div {
   max-width: none;
 }
-/* line 184, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .topnav .list .list_account .list_s {
   padding: 0 10px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .topnav .list .list_account .list_s .inf_name {
   color: #fff000;
   text-align: center;
@@ -315,12 +323,12 @@ nav {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 193, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .topnav .list .list_account .list_s .inf_money {
   line-height: 25px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-/* line 197, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .topnav .list .list_account .list_s .listbtn {
   width: 100%;
   margin: 5px 0;
@@ -337,7 +345,7 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 204, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .topnav .list .list_account .list_s .listbtn div {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -345,38 +353,38 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 205, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .topnav .list .list_account .list_s .listbtn:hover {
   border: 1px solid #fff000;
 }
-/* line 207, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .topnav .list .list_account .list_s .listbtn:hover div {
   color: #fff000;
 }
-/* line 215, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .topnav .topnav {
   height: 80px;
   background: #ff7200;
   padding: 0 1%;
   width: 98%;
 }
-/* line 220, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .topnav .topnav .logo {
   float: left;
   height: 100%;
 }
-/* line 223, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .topnav .topnav .logo img {
   vertical-align: middle;
   height: 100%;
 }
-/* line 228, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .topnav .topnav .topnav_list {
   line-height: 80px;
   font-size: 20px;
   float: right;
 }
-/* line 233, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .topnav .topnav .topnav_list > .listadd:after {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -390,27 +398,27 @@ nav {
   border: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
-/* line 242, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .topnav .topnav .topnav_list > .listadd:hover:after {
   border-bottom: 10px solid #000;
 }
-/* line 246, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .topnav .topnav .topnav_list > ul {
   width: 100px;
 }
-/* line 248, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .topnav .topnav .topnav_list > ul div {
   color: #fff;
 }
-/* line 252, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .topnav .topnav .topnav_list > ul:hover {
   background: #ff4800;
 }
-/* line 257, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .topnav .topnav .topnav_list > ul .list_b {
   padding: 0 10px;
 }
-/* line 260, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .topnav .topnav .topnav_list > ul .list_s {
   width: 300px;
   top: 80px;
@@ -418,7 +426,7 @@ nav {
   left: calc(50% - 150px);
   line-height: 35px;
 }
-/* line 266, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .topnav .topnav .topnav_list > ul .list_s .list_s_in {
   width: 50%;
   float: left;
@@ -433,18 +441,18 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 276, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .topnav .topnav .topnav_list > ul .list_s .list_s_in:hover {
   color: #ff7200;
   background: #222;
 }
 
-/* line 285, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .topbanner {
   width: 100%;
 }
 
-/* line 288, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 .lotterybox {
   margin-top: -80px;
   background: #2e2e2e;
@@ -452,26 +460,26 @@ nav {
   color: #fff;
   overflow: hidden;
 }
-/* line 294, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .lotterybox > div {
   float: left;
 }
-/* line 297, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .lotterybox .header {
   height: 40px;
   line-height: 40px;
   padding: 0 10px;
 }
-/* line 302, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .lotterybox .lotterybox_left {
   width: 75%;
 }
-/* line 304, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .lotterybox .lotterybox_left .lotterybox_left_heaher {
   background: #ff7200;
   font-size: 16px;
 }
-/* line 307, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .lotterybox .lotterybox_left .lotterybox_left_heaher i {
   font-size: 24px;
   vertical-align: middle;
@@ -479,13 +487,13 @@ nav {
   line-height: 40px;
   margin-right: 10px;
 }
-/* line 315, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 .lotterybox .lotterybox_left .toplottery {
   overflow: hidden;
   font-size: 20px;
   text-align: center;
 }
-/* line 319, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .lotterybox .lotterybox_left .toplottery li {
   float: left;
   margin-right: 0;
@@ -500,7 +508,7 @@ nav {
 .lotterybox .lotterybox_left .toplottery li:nth-child(5n) {
   margin-right: 0;
 }
-/* line 325, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 .lotterybox .lotterybox_left .toplottery li:after {
   content: "";
   position: absolute;
@@ -515,11 +523,11 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 336, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 .lotterybox .lotterybox_left .toplottery li:hover:after {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 339, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .lotterybox .lotterybox_left .toplottery li:hover .toplotterytxt {
   -webkit-transform: scale(1.1) translatey(-50%);
   -moz-transform: scale(1.1) translatey(-50%);
@@ -527,7 +535,7 @@ nav {
   -o-transform: scale(1.1) translatey(-50%);
   transform: scale(1.1) translatey(-50%);
 }
-/* line 342, ../sass/screen.scss */
+/* line 344, ../sass/screen.scss */
 .lotterybox .lotterybox_left .toplottery li:hover img {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -535,7 +543,7 @@ nav {
   -o-transform: scale(1.2);
   transform: scale(1.2);
 }
-/* line 346, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .lotterybox .lotterybox_left .toplottery li img {
   top: 0;
   left: 0;
@@ -554,7 +562,7 @@ nav {
   -o-transition: all 1s ease;
   transition: all 1s ease;
 }
-/* line 356, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .lotterybox .lotterybox_left .toplottery li .toplotterytxt {
   position: absolute;
   width: 100%;
@@ -573,20 +581,20 @@ nav {
   z-index: 5;
   text-shadow: 0px 0px 5px #000000;
 }
-/* line 369, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery {
   padding: 25px 15px;
   overflow: hidden;
   width: calc(100% - 30px);
   position: relative;
 }
-/* line 374, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery .alllottery_grid {
   float: left;
   width: calc(50% - 70px - 1px);
   padding: 0 35px;
 }
-/* line 378, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery .alllottery_grid header {
   color: #ff7200;
   font-size: 20px;
@@ -594,21 +602,21 @@ nav {
   padding-left: 10px;
   padding-top: 5px;
 }
-/* line 385, ../sass/screen.scss */
+/* line 387, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery .alllottery_grid .gamelist {
   font-size: 16px;
   background: #171717;
   padding: 5px;
   overflow: hidden;
 }
-/* line 390, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery .alllottery_grid .gamelist li {
   float: left;
   padding: 8px;
   padding-right: 20px;
   position: relative;
 }
-/* line 395, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery .alllottery_grid .gamelist li:after {
   font-size: 14px;
   width: 18px;
@@ -624,7 +632,7 @@ nav {
   right: -0px;
   padding: 0 1px;
 }
-/* line 406, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery .alllottery_grid .gamelist li div {
   color: #fff;
   -webkit-transition: all 0.3s ease;
@@ -633,34 +641,34 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 411, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery .alllottery_grid .gamelist li:hover div {
   color: #fff000;
 }
-/* line 417, ../sass/screen.scss */
+/* line 419, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery .alllottery_grid .gamelist .tag_hot:after {
   content: "H";
   background: #da0000;
 }
-/* line 423, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery .alllottery_grid .gamelist .tag_new:after {
   content: "N";
   background: #971cff;
 }
-/* line 430, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .lotterybox .lotterybox_left .alllottery .alllottery_left {
   border-right: 1px solid #5c5c5c;
 }
-/* line 435, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .lotterybox .lotterybox_right {
   width: 25%;
 }
-/* line 437, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .lotterybox .lotterybox_right .totalaward {
   text-align: right;
   position: relative;
 }
-/* line 440, ../sass/screen.scss */
+/* line 442, ../sass/screen.scss */
 .lotterybox .lotterybox_right .totalaward:after {
   content: "";
   border-color: #ff7200 transparent transparent transparent;
@@ -672,18 +680,18 @@ nav {
   top: 0;
   left: 0;
 }
-/* line 451, ../sass/screen.scss */
+/* line 453, ../sass/screen.scss */
 .lotterybox .lotterybox_right .totalaward span {
   font-size: 20px;
   margin: 0 5px;
   color: #ff7200;
   font-weight: 900;
 }
-/* line 456, ../sass/screen.scss */
+/* line 458, ../sass/screen.scss */
 .lotterybox .lotterybox_right .totalaward span:before {
   content: "$";
 }
-/* line 461, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop {
   background: #ff7200;
   color: #fff;
@@ -691,24 +699,24 @@ nav {
   margin-bottom: -1000px;
   padding-bottom: 1020px;
 }
-/* line 467, ../sass/screen.scss */
+/* line 469, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop header {
   font-size: 20px;
   letter-spacing: 5px;
   line-height: 35px;
   padding-bottom: 10px;
 }
-/* line 472, ../sass/screen.scss */
+/* line 474, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop header span {
   font-size: 16px;
   letter-spacing: 0px;
 }
-/* line 477, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop .lottery_toppop_list {
   width: 100%;
   overflow: hidden;
 }
-/* line 480, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop .lottery_toppop_list li {
   float: left;
   width: calc( 50% -  2px - 2.5%);
@@ -727,40 +735,40 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 489, ../sass/screen.scss */
+/* line 491, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop .lottery_toppop_list li div {
   color: #fff;
   padding: 5%;
 }
-/* line 493, ../sass/screen.scss */
+/* line 495, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop .lottery_toppop_list li:nth-child(2n+2) {
   margin-right: 0%;
 }
-/* line 496, ../sass/screen.scss */
+/* line 498, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop .lottery_toppop_list li:hover {
   background: #fff;
 }
-/* line 498, ../sass/screen.scss */
+/* line 500, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop .lottery_toppop_list li:hover div {
   color: #ff7200;
 }
-/* line 505, ../sass/screen.scss */
+/* line 507, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop .popbanners {
   margin-top: 10px;
 }
-/* line 507, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 .lotterybox .lotterybox_right .lottery_toppop .popbanners img {
   width: 100%;
 }
 
-/* line 514, ../sass/screen.scss */
+/* line 516, ../sass/screen.scss */
 .game_orther {
   margin-top: 40px;
   overflow: hidden;
   position: relative;
   z-index: 5;
 }
-/* line 519, ../sass/screen.scss */
+/* line 521, ../sass/screen.scss */
 .game_orther li {
   overflow: hidden;
   float: left;
@@ -773,12 +781,12 @@ nav {
 .game_orther li:nth-child(3n) {
   margin-right: 0;
 }
-/* line 523, ../sass/screen.scss */
+/* line 525, ../sass/screen.scss */
 .game_orther li img {
   width: 100%;
   vertical-align: middle;
 }
-/* line 527, ../sass/screen.scss */
+/* line 529, ../sass/screen.scss */
 .game_orther li .title {
   width: 100%;
   position: absolute;
@@ -799,12 +807,12 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 538, ../sass/screen.scss */
+/* line 540, ../sass/screen.scss */
 .game_orther li .title div {
   font-size: 16px;
   letter-spacing: 0px;
 }
-/* line 543, ../sass/screen.scss */
+/* line 545, ../sass/screen.scss */
 .game_orther li .titlebg {
   -webkit-transform: translatex(-50%) scale(1);
   -moz-transform: translatex(-50%) scale(1);
@@ -828,7 +836,7 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 554, ../sass/screen.scss */
+/* line 556, ../sass/screen.scss */
 .game_orther li .text {
   height: 80px;
   position: absolute;
@@ -845,7 +853,7 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 567, ../sass/screen.scss */
+/* line 569, ../sass/screen.scss */
 .game_orther li:hover .titlebg {
   -webkit-transform: translatex(-50%) scale(3);
   -moz-transform: translatex(-50%) scale(3);
@@ -856,11 +864,11 @@ nav {
   height: 100%;
   opacity: .8;
 }
-/* line 573, ../sass/screen.scss */
+/* line 575, ../sass/screen.scss */
 .game_orther li:hover .text {
   height: 100px;
 }
-/* line 576, ../sass/screen.scss */
+/* line 578, ../sass/screen.scss */
 .game_orther li:hover .title {
   bottom: 140px;
   -webkit-transform: translatey(-50%) scale(1.2);
@@ -870,12 +878,12 @@ nav {
   transform: translatey(-50%) scale(1.2);
 }
 
-/* line 584, ../sass/screen.scss */
+/* line 586, ../sass/screen.scss */
 #index .copyright {
   padding-top: 150px;
   margin-top: -153px;
 }
-/* line 588, ../sass/screen.scss */
+/* line 590, ../sass/screen.scss */
 #index .topnav, #index .lotterybox, #index .game_orther li {
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
@@ -884,68 +892,68 @@ nav {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* line 592, ../sass/screen.scss */
+/* line 594, ../sass/screen.scss */
 .copyright {
   background: #2e2e2e;
   position: relative;
   color: #fff;
 }
-/* line 596, ../sass/screen.scss */
+/* line 598, ../sass/screen.scss */
 .copyright .copylogo {
   text-align: center;
   height: 75px;
   margin: 20px 0px;
 }
 @media screen and (min-width: 0) and (max-width: 1280px) {
-  /* line 596, ../sass/screen.scss */
+  /* line 598, ../sass/screen.scss */
   .copyright .copylogo {
     height: 55px;
   }
 }
-/* line 603, ../sass/screen.scss */
+/* line 605, ../sass/screen.scss */
 .copyright .copylogo img {
   height: 100%;
   vertical-align: middle;
 }
-/* line 609, ../sass/screen.scss */
+/* line 611, ../sass/screen.scss */
 .copyright .copy_inf {
   overflow: hidden;
   line-height: 30px;
   padding: 20px;
 }
-/* line 613, ../sass/screen.scss */
+/* line 615, ../sass/screen.scss */
 .copyright .copy_inf li {
   float: left;
 }
-/* line 616, ../sass/screen.scss */
+/* line 618, ../sass/screen.scss */
 .copyright .copy_inf .txt {
   width: calc(40% - 40px);
   padding: 30px 20px;
 }
-/* line 620, ../sass/screen.scss */
+/* line 622, ../sass/screen.scss */
 .copyright .copy_inf .txt_QQ {
   width: calc(35% - 40px);
 }
-/* line 623, ../sass/screen.scss */
+/* line 625, ../sass/screen.scss */
 .copyright .copy_inf .txt_license {
   margin-left: 5%;
 }
-/* line 626, ../sass/screen.scss */
+/* line 628, ../sass/screen.scss */
 .copyright .copy_inf .copy_license {
   width: 20%;
   padding-bottom: 30px;
 }
-/* line 629, ../sass/screen.scss */
+/* line 631, ../sass/screen.scss */
 .copyright .copy_inf .copy_license img {
   width: 100%;
   vertical-align: middle;
 }
-/* line 634, ../sass/screen.scss */
+/* line 636, ../sass/screen.scss */
 .copyright .copy_inf a {
   color: #fff;
 }
 
-/* line 640, ../sass/screen.scss */
+/* line 642, ../sass/screen.scss */
 .footer {
   color: #fff;
   text-align: center;
@@ -953,17 +961,17 @@ nav {
   cursor: default;
   padding: 20px 0;
 }
-/* line 646, ../sass/screen.scss */
+/* line 648, ../sass/screen.scss */
 .footer a {
   color: #fff;
 }
-/* line 648, ../sass/screen.scss */
+/* line 650, ../sass/screen.scss */
 .footer a:hover {
   text-decoration: underline;
 }
 
 /*********videopage**********/
-/* line 655, ../sass/screen.scss */
+/* line 657, ../sass/screen.scss */
 #video {
   /*
   .copyright{
@@ -972,13 +980,13 @@ nav {
   }
   */
 }
-/* line 662, ../sass/screen.scss */
+/* line 664, ../sass/screen.scss */
 #video .videobox {
   margin-top: 3%;
   overflow: hidden;
   z-index: 3;
 }
-/* line 666, ../sass/screen.scss */
+/* line 668, ../sass/screen.scss */
 #video .videobox li {
   position: relative;
   overflow: hidden;
@@ -992,7 +1000,7 @@ nav {
 #video .videobox li:nth-child(3n) {
   margin-right: 0;
 }
-/* line 671, ../sass/screen.scss */
+/* line 673, ../sass/screen.scss */
 #video .videobox li:after {
   position: absolute;
   content: "";
@@ -1008,21 +1016,21 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 683, ../sass/screen.scss */
+/* line 685, ../sass/screen.scss */
 #video .videobox li:hover:after {
   opacity: 1;
 }
-/* line 687, ../sass/screen.scss */
+/* line 689, ../sass/screen.scss */
 #video .videobox li:hover .videocontent .videobtn {
   background: #ff7200;
   border: 1px solid #ff7200;
 }
-/* line 694, ../sass/screen.scss */
+/* line 696, ../sass/screen.scss */
 #video .videobox li .videoback img {
   width: 100%;
   vertical-align: middle;
 }
-/* line 697, ../sass/screen.scss */
+/* line 699, ../sass/screen.scss */
 #video .videobox li .videocontent {
   position: absolute;
   z-index: 5;
@@ -1035,11 +1043,11 @@ nav {
   left: 50%;
   width: 200px;
 }
-/* line 705, ../sass/screen.scss */
+/* line 707, ../sass/screen.scss */
 #video .videobox li .videocontent .videologo img {
   width: 100%;
 }
-/* line 709, ../sass/screen.scss */
+/* line 711, ../sass/screen.scss */
 #video .videobox li .videocontent .videobtn {
   text-align: center;
   -webkit-transition: all 0.3s ease;
@@ -1060,41 +1068,41 @@ nav {
 }
 
 /*********elegame***********/
-/* line 726, ../sass/screen.scss */
+/* line 728, ../sass/screen.scss */
 #elegame .gamelist {
   margin-top: 60px;
   z-index: 4;
   position: relative;
 }
-/* line 730, ../sass/screen.scss */
+/* line 732, ../sass/screen.scss */
 #elegame .gamelist .gamename {
   background: #6d6d6d;
   overflow: hidden;
 }
-/* line 733, ../sass/screen.scss */
+/* line 735, ../sass/screen.scss */
 #elegame .gamelist .gamename .gamelistbtn {
   float: left;
   width: 50px;
   cursor: pointer;
 }
-/* line 737, ../sass/screen.scss */
+/* line 739, ../sass/screen.scss */
 #elegame .gamelist .gamename .gamelistbtn:hover {
   color: #fff;
 }
-/* line 741, ../sass/screen.scss */
+/* line 743, ../sass/screen.scss */
 #elegame .gamelist .gamename > div {
   overflow: hidden;
   width: calc(100% - 100px);
   float: left;
   height: 70px;
 }
-/* line 746, ../sass/screen.scss */
+/* line 748, ../sass/screen.scss */
 #elegame .gamelist .gamename > div ul {
   position: relative;
   width: 1000%;
   overflow: hidden;
 }
-/* line 751, ../sass/screen.scss */
+/* line 753, ../sass/screen.scss */
 #elegame .gamelist .gamename > div li {
   float: left;
   margin-right: 0;
@@ -1105,7 +1113,7 @@ nav {
 #elegame .gamelist .gamename > div li:nth-child(60n) {
   margin-right: 0;
 }
-/* line 753, ../sass/screen.scss */
+/* line 755, ../sass/screen.scss */
 #elegame .gamelist .gamename li {
   font-size: 20px;
   text-align: center;
@@ -1117,20 +1125,20 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 759, ../sass/screen.scss */
+/* line 761, ../sass/screen.scss */
 #elegame .gamelist .gamename li div {
   color: #fff;
 }
-/* line 762, ../sass/screen.scss */
+/* line 764, ../sass/screen.scss */
 #elegame .gamelist .gamename li:hover {
   background: #2e2e2e;
 }
-/* line 766, ../sass/screen.scss */
+/* line 768, ../sass/screen.scss */
 #elegame .gamelist .gamename .active {
   background: #2e2e2e;
   position: relative;
 }
-/* line 769, ../sass/screen.scss */
+/* line 771, ../sass/screen.scss */
 #elegame .gamelist .gamename .active:after {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1144,13 +1152,13 @@ nav {
   border: 10px solid transparent;
   border-bottom: 10px solid #ff7200;
 }
-/* line 781, ../sass/screen.scss */
+/* line 783, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar {
   background: #ff7200;
   line-height: 60px;
   height: 60px;
 }
-/* line 786, ../sass/screen.scss */
+/* line 788, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .gamesort ul {
   float: left;
   padding: 0 20px;
@@ -1161,16 +1169,16 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 791, ../sass/screen.scss */
+/* line 793, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .gamesort ul:hover {
   background: #ff4800;
 }
-/* line 793, ../sass/screen.scss */
+/* line 795, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .gamesort ul:hover .gamelists {
   max-height: 500px;
   opacity: 1;
 }
-/* line 798, ../sass/screen.scss */
+/* line 800, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .gamesort ul .gamelists {
   overflow: hidden;
   position: absolute;
@@ -1185,7 +1193,7 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 808, ../sass/screen.scss */
+/* line 810, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .gamesort ul .gamelists div {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1194,32 +1202,32 @@ nav {
   transition: all 0.3s ease;
   padding: 0 20px;
 }
-/* line 811, ../sass/screen.scss */
+/* line 813, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .gamesort ul .gamelists div:hover {
   background: #f10000;
 }
-/* line 817, ../sass/screen.scss */
+/* line 819, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .gamesort a div {
   color: #fff;
 }
-/* line 821, ../sass/screen.scss */
+/* line 823, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .searchbar {
   float: right;
   margin-right: 10px;
   margin-top: 13px;
 }
-/* line 825, ../sass/screen.scss */
+/* line 827, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .searchbar > * {
   float: left;
 }
-/* line 828, ../sass/screen.scss */
+/* line 830, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .searchbar input {
   height: 35px;
   width: 180px;
   border: 0;
   padding: 0 10px;
 }
-/* line 834, ../sass/screen.scss */
+/* line 836, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .searchbar .searchbtn {
   text-align: center;
   width: 100px;
@@ -1239,20 +1247,20 @@ nav {
   color: #fff;
   margin: 0 10px;
 }
-/* line 844, ../sass/screen.scss */
+/* line 846, ../sass/screen.scss */
 #elegame .gamelist .gamesearchbar .searchbar .searchbtn:hover {
   background: #fff;
   color: #ff4800;
 }
-/* line 852, ../sass/screen.scss */
+/* line 854, ../sass/screen.scss */
 #elegame .gamebox {
   margin-top: 1%;
 }
-/* line 854, ../sass/screen.scss */
+/* line 856, ../sass/screen.scss */
 #elegame .gamebox ul {
   overflow: hidden;
 }
-/* line 856, ../sass/screen.scss */
+/* line 858, ../sass/screen.scss */
 #elegame .gamebox ul li {
   background: #2e2e2e;
   float: left;
@@ -1272,13 +1280,13 @@ nav {
 #elegame .gamebox ul li:nth-child(5n) {
   margin-right: 0;
 }
-/* line 863, ../sass/screen.scss */
+/* line 865, ../sass/screen.scss */
 #elegame .gamebox ul li .elegame_img {
   vertical-align: middle;
   width: 100%;
   height: 100%;
 }
-/* line 867, ../sass/screen.scss */
+/* line 869, ../sass/screen.scss */
 #elegame .gamebox ul li .elegame_img img {
   width: 100%;
   position: absolute;
@@ -1295,7 +1303,7 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 876, ../sass/screen.scss */
+/* line 878, ../sass/screen.scss */
 #elegame .gamebox ul li .elegame_txt {
   position: absolute;
   line-height: 50px;
@@ -1317,7 +1325,7 @@ nav {
   -o-transform: scale(1);
   transform: scale(1);
 }
-/* line 892, ../sass/screen.scss */
+/* line 894, ../sass/screen.scss */
 #elegame .gamebox ul li:hover .elegame_img img {
   -webkit-transform: translatex(-50%) translatey(-50%) scale(1.1);
   -moz-transform: translatex(-50%) translatey(-50%) scale(1.1);
@@ -1325,12 +1333,12 @@ nav {
   -o-transform: translatex(-50%) translatey(-50%) scale(1.1);
   transform: translatex(-50%) translatey(-50%) scale(1.1);
 }
-/* line 896, ../sass/screen.scss */
+/* line 898, ../sass/screen.scss */
 #elegame .gamebox ul li:hover .elegame_txt {
   background: #ff4800;
   color: #fff;
 }
-/* line 906, ../sass/screen.scss */
+/* line 908, ../sass/screen.scss */
 #elegame .pagebar {
   background: #ff7200;
   line-height: 60px;
@@ -1338,15 +1346,15 @@ nav {
   text-align: center;
   margin-bottom: 1%;
 }
-/* line 912, ../sass/screen.scss */
+/* line 914, ../sass/screen.scss */
 #elegame .pagebar li {
   display: inline-block;
 }
-/* line 916, ../sass/screen.scss */
+/* line 918, ../sass/screen.scss */
 #elegame .pagebar li:hover a div {
   background: #ff4800;
 }
-/* line 922, ../sass/screen.scss */
+/* line 924, ../sass/screen.scss */
 #elegame .pagebar li div {
   color: #fff;
   height: 60px;
@@ -1358,37 +1366,37 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* line 932, ../sass/screen.scss */
+/* line 934, ../sass/screen.scss */
 #event .inflist {
   margin-top: 60px;
 }
-/* line 934, ../sass/screen.scss */
+/* line 936, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox {
   background: #f3f3f3;
   position: relative;
   margin-bottom: 30px;
 }
-/* line 938, ../sass/screen.scss */
+/* line 940, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .inflist_banner {
   position: relative;
   cursor: pointer;
 }
-/* line 941, ../sass/screen.scss */
+/* line 943, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .inflist_banner .inflist_banner_logo {
   position: absolute;
   height: 100%;
 }
-/* line 944, ../sass/screen.scss */
+/* line 946, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .inflist_banner .inflist_banner_logo img {
   height: 100%;
   vertical-align: middle;
 }
-/* line 950, ../sass/screen.scss */
+/* line 952, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .inflist_banner .inflist_banner_img img {
   width: 100%;
   vertical-align: middle;
 }
-/* line 957, ../sass/screen.scss */
+/* line 959, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .inflist_text {
   padding: 0px 8%;
   max-height: 0;
@@ -1399,24 +1407,24 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 962, ../sass/screen.scss */
+/* line 964, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .inflist_text .inflist_title {
   font-size: 20px;
   line-height: 35px;
   color: #ff7200;
   font-weight: 900;
 }
-/* line 968, ../sass/screen.scss */
+/* line 970, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .inflist_text .inflist_time {
   color: #898989;
 }
-/* line 971, ../sass/screen.scss */
+/* line 973, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .inflist_text .inflist_content {
   margin-top: 35px;
   color: #222222;
   text-align: justify;
 }
-/* line 977, ../sass/screen.scss */
+/* line 979, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .popbtn {
   position: relative;
   width: 100%;
@@ -1428,15 +1436,15 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 984, ../sass/screen.scss */
+/* line 986, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .popbtn:hover .cursorbtn {
   background-color: #2e2e2e;
 }
-/* line 986, ../sass/screen.scss */
+/* line 988, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .popbtn:hover .cursorbtn i {
   color: #ff7200;
 }
-/* line 991, ../sass/screen.scss */
+/* line 993, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .popbtn .cursorbtn {
   -webkit-transform: translatex(-50%);
   -moz-transform: translatex(-50%);
@@ -1461,7 +1469,7 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 1002, ../sass/screen.scss */
+/* line 1004, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .popbtn .cursorbtn i {
   font-size: 40px;
   color: #fff;
@@ -1471,42 +1479,42 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 1006, ../sass/screen.scss */
+/* line 1008, ../sass/screen.scss */
 #event .inflist .inflist_bannerbox .popbtn .cursorbtn i:before {
   margin-left: 20px;
   content: "\e901";
 }
-/* line 1015, ../sass/screen.scss */
+/* line 1017, ../sass/screen.scss */
 #event .inflist .openbanner .inflist_text {
   padding: 35px 8%;
   max-height: 1000px;
 }
-/* line 1019, ../sass/screen.scss */
+/* line 1021, ../sass/screen.scss */
 #event .inflist .openbanner .popbtn {
   margin-top: 40px;
 }
-/* line 1021, ../sass/screen.scss */
+/* line 1023, ../sass/screen.scss */
 #event .inflist .openbanner .popbtn .cursorbtn {
   background-color: #2e2e2e;
 }
-/* line 1024, ../sass/screen.scss */
+/* line 1026, ../sass/screen.scss */
 #event .inflist .openbanner .popbtn .cursorbtn i:before {
   content: "\e902";
 }
 
 /*********General**********/
-/* line 1036, ../sass/screen.scss */
+/* line 1038, ../sass/screen.scss */
 #about .copyright {
   padding-top: 150px;
   margin-top: -130px;
 }
-/* line 1040, ../sass/screen.scss */
+/* line 1042, ../sass/screen.scss */
 #about .aboutbox {
   margin-top: 3%;
   overflow: hidden;
   z-index: 3;
 }
-/* line 1044, ../sass/screen.scss */
+/* line 1046, ../sass/screen.scss */
 #about .aboutbox .leftmenu {
   width: 250px;
   margin-bottom: -3000px;
@@ -1514,7 +1522,7 @@ nav {
   float: left;
   background-color: #636363;
 }
-/* line 1051, ../sass/screen.scss */
+/* line 1053, ../sass/screen.scss */
 #about .aboutbox .leftmenu a {
   text-align: center;
   display: block;
@@ -1527,26 +1535,26 @@ nav {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 1058, ../sass/screen.scss */
+/* line 1060, ../sass/screen.scss */
 #about .aboutbox .leftmenu a:hover {
   background-color: #2c2c2c;
   cursor: pointer;
 }
-/* line 1064, ../sass/screen.scss */
+/* line 1066, ../sass/screen.scss */
 #about .aboutbox .rightbox {
   float: left;
   width: calc(100% - 250px);
   background-color: #f3f3f3;
 }
-/* line 1069, ../sass/screen.scss */
+/* line 1071, ../sass/screen.scss */
 #about .aboutbox .rightbox .banner {
   position: relative;
 }
-/* line 1071, ../sass/screen.scss */
+/* line 1073, ../sass/screen.scss */
 #about .aboutbox .rightbox .banner img {
   width: 100%;
 }
-/* line 1074, ../sass/screen.scss */
+/* line 1076, ../sass/screen.scss */
 #about .aboutbox .rightbox .banner .banner-text {
   position: absolute;
   top: 60%;
@@ -1559,73 +1567,73 @@ nav {
   padding: 12px 25px;
   letter-spacing: 3px;
 }
-/* line 1085, ../sass/screen.scss */
+/* line 1087, ../sass/screen.scss */
 #about .aboutbox .rightbox .banner .banner-text h1 {
   font-size: 35px;
 }
-/* line 1087, ../sass/screen.scss */
+/* line 1089, ../sass/screen.scss */
 #about .aboutbox .rightbox .banner .banner-text h1 span {
   font-size: 22px;
 }
-/* line 1093, ../sass/screen.scss */
+/* line 1095, ../sass/screen.scss */
 #about .aboutbox .rightbox .description {
   padding: 40px 60px;
   background-color: #f3f3f3;
 }
-/* line 1096, ../sass/screen.scss */
+/* line 1098, ../sass/screen.scss */
 #about .aboutbox .rightbox .description input,
 #about .aboutbox .rightbox .description textarea {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #2c2c2c;
 }
-/* line 1101, ../sass/screen.scss */
+/* line 1103, ../sass/screen.scss */
 #about .aboutbox .rightbox .description input::placeholder,
 #about .aboutbox .rightbox .description textarea::placeholder {
   color: #c2c2c2;
 }
-/* line 1105, ../sass/screen.scss */
+/* line 1107, ../sass/screen.scss */
 #about .aboutbox .rightbox .description input {
   margin-bottom: 25px;
 }
-/* line 1108, ../sass/screen.scss */
+/* line 1110, ../sass/screen.scss */
 #about .aboutbox .rightbox .description .input-mark {
   margin-bottom: 0;
 }
-/* line 1111, ../sass/screen.scss */
+/* line 1113, ../sass/screen.scss */
 #about .aboutbox .rightbox .description p {
   margin-bottom: 20px;
 }
-/* line 1114, ../sass/screen.scss */
+/* line 1116, ../sass/screen.scss */
 #about .aboutbox .rightbox .description .leftform,
 #about .aboutbox .rightbox .description .rightform {
   padding: 0 15px;
   float: left;
   width: calc(100% / 2 - 15px*2);
 }
-/* line 1119, ../sass/screen.scss */
+/* line 1121, ../sass/screen.scss */
 #about .aboutbox .rightbox .description .leftform textarea,
 #about .aboutbox .rightbox .description .leftform input,
 #about .aboutbox .rightbox .description .rightform textarea,
 #about .aboutbox .rightbox .description .rightform input {
   width: calc(100% - 10px*2);
 }
-/* line 1124, ../sass/screen.scss */
+/* line 1126, ../sass/screen.scss */
 #about .aboutbox .rightbox .description .centerform {
   padding: 0 15px;
   width: calc(100% - 15px*2);
 }
-/* line 1127, ../sass/screen.scss */
+/* line 1129, ../sass/screen.scss */
 #about .aboutbox .rightbox .description .centerform textarea {
   width: calc(100% - 10px*2);
   margin-bottom: 25px;
 }
 
-/* line 1137, ../sass/screen.scss */
+/* line 1139, ../sass/screen.scss */
 .formbutton {
   text-align: center;
 }
-/* line 1139, ../sass/screen.scss */
+/* line 1141, ../sass/screen.scss */
 .formbutton button {
   font-size: 16px;
   color: #fff;
@@ -1636,85 +1644,85 @@ nav {
   border-radius: 4px;
   margin-right: 20px;
 }
-/* line 1149, ../sass/screen.scss */
+/* line 1151, ../sass/screen.scss */
 .formbutton .login,
 .formbutton .confirm {
   background-color: #ff7200;
 }
-/* line 1153, ../sass/screen.scss */
+/* line 1155, ../sass/screen.scss */
 .formbutton .register {
   background-color: #2c2c2c;
 }
 
 /*********formpage**********/
-/* line 1163, ../sass/screen.scss */
+/* line 1165, ../sass/screen.scss */
 #about .contactbox .leftmenu,
 #about .contactbox .rightbox {
   height: 780px;
 }
-/* line 1175, ../sass/screen.scss */
+/* line 1177, ../sass/screen.scss */
 #about .suggestbox .leftmenu,
 #about .suggestbox .rightbox {
   height: 900px;
 }
-/* line 1181, ../sass/screen.scss */
+/* line 1183, ../sass/screen.scss */
 #about .suggestbox .rightbox .suggest > * {
   margin-right: 8px;
 }
-/* line 1184, ../sass/screen.scss */
+/* line 1186, ../sass/screen.scss */
 #about .suggestbox .rightbox .suggest .title {
   color: #ff7200;
 }
-/* line 1188, ../sass/screen.scss */
+/* line 1190, ../sass/screen.scss */
 #about .suggestbox .rightbox .radiogroup {
   display: inline-block;
 }
-/* line 1197, ../sass/screen.scss */
+/* line 1199, ../sass/screen.scss */
 #about .contactbox .rightbox .description,
 #about .suggestbox .rightbox .description,
 #about .joinbox .rightbox .description {
   padding: 40px 160px;
 }
-/* line 1204, ../sass/screen.scss */
+/* line 1206, ../sass/screen.scss */
 #about .joinbox .rightbox .description {
   padding: 40px 0px;
   width: 90%;
   margin: 0 auto;
 }
-/* line 1208, ../sass/screen.scss */
+/* line 1210, ../sass/screen.scss */
 #about .joinbox .rightbox .description .formbox {
   padding: 0 50px;
 }
-/* line 1211, ../sass/screen.scss */
+/* line 1213, ../sass/screen.scss */
 #about .joinbox .rightbox .description hr {
   background-color: #eee;
   margin: 25px 0;
   width: 100%;
 }
-/* line 1216, ../sass/screen.scss */
+/* line 1218, ../sass/screen.scss */
 #about .joinbox .rightbox .description .formgroup {
   width: 670px;
 }
-/* line 1219, ../sass/screen.scss */
+/* line 1221, ../sass/screen.scss */
 #about .joinbox .rightbox .description .formgroup:last-child input {
   margin-bottom: 0;
 }
-/* line 1223, ../sass/screen.scss */
+/* line 1225, ../sass/screen.scss */
 #about .joinbox .rightbox .description .formgroup input {
   width: 300px;
 }
-/* line 1226, ../sass/screen.scss */
+/* line 1228, ../sass/screen.scss */
 #about .joinbox .rightbox .description .formgroup select,
 #about .joinbox .rightbox .description .formgroup .text-icon {
   width: 322px;
 }
-/* line 1230, ../sass/screen.scss */
+/* line 1232, ../sass/screen.scss */
 #about .joinbox .rightbox .description .formgroup .text-icon {
   position: relative;
   height: 18px;
   display: inline-block;
 }
-/* line 1235, ../sass/screen.scss */
+/* line 1237, ../sass/screen.scss */
 #about .joinbox .rightbox .description .formgroup .icon-visibility_off:before,
 #about .joinbox .rightbox .description .formgroup .icon-visibility:before {
   position: absolute;
@@ -1724,42 +1732,42 @@ nav {
   color: #c2c2c2;
   cursor: pointer;
 }
-/* line 1245, ../sass/screen.scss */
+/* line 1247, ../sass/screen.scss */
 #about .joinbox .rightbox .description span:before {
   vertical-align: middle;
 }
-/* line 1248, ../sass/screen.scss */
+/* line 1250, ../sass/screen.scss */
 #about .joinbox .rightbox .description .icon-arrow_drop_down {
   font-size: 45px;
 }
-/* line 1251, ../sass/screen.scss */
+/* line 1253, ../sass/screen.scss */
 #about .joinbox .rightbox .description .icon-information:before {
   font-size: 30px;
 }
-/* line 1254, ../sass/screen.scss */
+/* line 1256, ../sass/screen.scss */
 #about .joinbox .rightbox .description .icon-delete:before {
   font-size: 28px;
 }
-/* line 1257, ../sass/screen.scss */
+/* line 1259, ../sass/screen.scss */
 #about .joinbox .rightbox .description .icon-check_circle:before {
   font-size: 22px;
   margin: 0 4px;
 }
-/* line 1261, ../sass/screen.scss */
+/* line 1263, ../sass/screen.scss */
 #about .joinbox .rightbox .description .icon-checkmark:before {
   font-size: 26px;
   vertical-align: top;
   line-height: 1.4;
   margin: 0 4px;
 }
-/* line 1267, ../sass/screen.scss */
+/* line 1269, ../sass/screen.scss */
 #about .joinbox .rightbox .description .choose {
   display: inline-block;
   margin-bottom: 30px;
   position: relative;
   vertical-align: middle;
 }
-/* line 1272, ../sass/screen.scss */
+/* line 1274, ../sass/screen.scss */
 #about .joinbox .rightbox .description .choose .select {
   width: 322px;
   position: relative;
@@ -1774,27 +1782,27 @@ nav {
   background-color: #fff;
   padding: 10px;
 }
-/* line 1285, ../sass/screen.scss */
+/* line 1287, ../sass/screen.scss */
 #about .joinbox .rightbox .description .choose .select img {
   float: left;
   line-height: 1.2;
   margin-right: 8px;
 }
-/* line 1290, ../sass/screen.scss */
+/* line 1292, ../sass/screen.scss */
 #about .joinbox .rightbox .description .choose .select h1 {
   display: inline-block;
   height: 40px;
   line-height: 20px;
   margin: 0;
 }
-/* line 1296, ../sass/screen.scss */
+/* line 1298, ../sass/screen.scss */
 #about .joinbox .rightbox .description .choose .select::before {
   content: '';
   clear: both;
   height: 0;
   width: 0;
 }
-/* line 1302, ../sass/screen.scss */
+/* line 1304, ../sass/screen.scss */
 #about .joinbox .rightbox .description .choose .select::after {
   content: '';
   width: 0;
@@ -1813,16 +1821,16 @@ nav {
   border-radius: 4px;
   margin-top: 6px;
 }
-/* line 1322, ../sass/screen.scss */
+/* line 1324, ../sass/screen.scss */
 #about .joinbox .rightbox .description .choose .up::after {
   transform: rotate(180deg);
 }
-/* line 1326, ../sass/screen.scss */
+/* line 1328, ../sass/screen.scss */
 #about .joinbox .rightbox .description .choose .choose-container {
   display: inline-block;
   width: 322px;
 }
-/* line 1331, ../sass/screen.scss */
+/* line 1333, ../sass/screen.scss */
 #about .joinbox .rightbox .description .area-dropdown {
   visibility: hidden;
   position: absolute;
@@ -1835,64 +1843,64 @@ nav {
   filter: drop-shadow(1px 1px 4px #e5e5e5);
   box-shadow: 1px 1px 4px #e5e5e5;
 }
-/* line 1343, ../sass/screen.scss */
+/* line 1345, ../sass/screen.scss */
 #about .joinbox .rightbox .description .area-dropdown li.bankname {
   padding: 10px;
   font-size: 14px;
   border: 1px solid #eee;
 }
-/* line 1347, ../sass/screen.scss */
+/* line 1349, ../sass/screen.scss */
 #about .joinbox .rightbox .description .area-dropdown li.bankname:hover {
   background-color: #eee;
   transition: all 0.5s;
   cursor: pointer;
 }
-/* line 1352, ../sass/screen.scss */
+/* line 1354, ../sass/screen.scss */
 #about .joinbox .rightbox .description .area-dropdown li.bankname img {
   float: left;
   line-height: 30px;
   margin-right: 8px;
   margin-top: 5px;
 }
-/* line 1358, ../sass/screen.scss */
+/* line 1360, ../sass/screen.scss */
 #about .joinbox .rightbox .description .area-dropdown li.bankname h1 {
   display: inline-block;
   height: 30px;
   line-height: 30px;
   margin: 0;
 }
-/* line 1366, ../sass/screen.scss */
+/* line 1368, ../sass/screen.scss */
 #about .joinbox .rightbox .description .verifyform {
   margin-bottom: 40px;
 }
-/* line 1368, ../sass/screen.scss */
+/* line 1370, ../sass/screen.scss */
 #about .joinbox .rightbox .description .verifyform .mark,
 #about .joinbox .rightbox .description .verifyform input {
   vertical-align: top;
 }
-/* line 1372, ../sass/screen.scss */
+/* line 1374, ../sass/screen.scss */
 #about .joinbox .rightbox .description .verifyform input {
   width: 150px;
   margin-bottom: 0;
 }
 
-/* line 1382, ../sass/screen.scss */
+/* line 1384, ../sass/screen.scss */
 .mark {
   font-size: 14px;
   color: red;
   line-height: 2.6;
 }
 
-/* line 1388, ../sass/screen.scss */
+/* line 1390, ../sass/screen.scss */
 .nomark {
   margin-left: 10px;
 }
 
-/* line 1392, ../sass/screen.scss */
+/* line 1394, ../sass/screen.scss */
 .text-black {
   color: #2c2c2c;
 }
-/* line 1395, ../sass/screen.scss */
+/* line 1397, ../sass/screen.scss */
 .text-black input {
   margin-left: 10px;
   margin-right: 5px !important;
@@ -1901,12 +1909,12 @@ nav {
   height: 20px;
 }
 
-/* line 1404, ../sass/screen.scss */
+/* line 1406, ../sass/screen.scss */
 .text-orange {
   color: orange;
 }
 
-/* line 1410, ../sass/screen.scss */
+/* line 1412, ../sass/screen.scss */
 #sport iframe {
   margin: 50px auto;
 }
