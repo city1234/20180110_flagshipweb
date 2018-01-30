@@ -1,7 +1,7 @@
 $(document).ready(function() {
     /*niceScroll*/
     //$("html").niceScroll({ cursorwidth: "8px", mousescrollstep: 50, scrollspeed: 50 });
-    $("html").niceScroll({ styler: "fb", cursorcolor: "#171717", autohidemode: false, cursorborder: "0px solid #fff", cursorwidth: "8px", zindex: 999 });
+    //$("html").niceScroll({ styler: "fb", cursorcolor: "#171717", autohidemode: false, cursorborder: "0px solid #fff", cursorwidth: "8px", zindex: 999 });
     /*endniceScroll*/
 
     /*allheight*/
